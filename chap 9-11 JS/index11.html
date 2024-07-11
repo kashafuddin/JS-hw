@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">go to home</a>
+    <script>
+        // Prompt user to enter the first number
+var num1 = parseFloat(prompt("Enter the first number:"));
+
+// Prompt user to enter the second number
+var num2 = parseFloat(prompt("Enter the second number:"));
+
+// Prompt user to enter the operation (+, -, *, /, %)
+var operation = prompt("Enter the operation (+, -, *, /, %):");
+
+// Compute and show the calculated result based on the operation
+if (operation === '+') {
+    alert(`The result of ${num1} + ${num2} is: ${num1 + num2}`);
+} else if (operation === '-') {
+    alert(`The result of ${num1} - ${num2} is: ${num1 - num2}`);
+} else if (operation === '*') {
+    alert(`The result of ${num1} * ${num2} is: ${num1 * num2}`);
+} else if (operation === '/') {
+    if (num2 === 0) {
+        alert("Error: Division by zero is not allowed.");
+    } else {
+        alert(`The result of ${num1} / ${num2} is: ${num1 / num2}`);
+    }
+} else if (operation === '%') {
+    alert(`The result of ${num1} % ${num2} is: ${num1 % num2}`);
+} else {
+    alert("Invalid operation. Please enter a valid operation (+, -, *, /, %).");
+}
+    </script>
+</body>
+</html>

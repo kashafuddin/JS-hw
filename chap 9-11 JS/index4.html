@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">go to home</a>
+    <h2>Enter the remaining fuel in your car (in litres):</h2>
+<input type="number" id="remainingFuel" placeholder="Enter fuel in liters">
+<button onclick="checkFuel()">Check Fuel</button>
+
+<script>
+function checkFuel()  {
+    var remainingFuel = parseFloat(document.getElementById("remainingFuel").value);
+
+    if (remainingFuel < 0.25) {
+        alert("Please refill the fuel in your car");
+    } else {
+        alert("Your fuel level is okay!");
+    }
+}
+</script>
+</body>
+</html>

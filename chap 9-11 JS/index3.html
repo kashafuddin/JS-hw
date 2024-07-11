@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">go to home</a>
+   <script>
+    // Program to show a message based on the color of the road traffic signal
+
+// Take input from the user
+var color = prompt("Enter the color of the road traffic signal (red/yellow/green):");
+
+// Check the color and display the corresponding message
+switch (color.toLowerCase()) {
+    case "red":
+        alert("Must Stop!");
+        break;
+    case "yellow":
+        alert("Ready to move!");
+        break;
+    case "green":
+        alert("Move now!");
+        break;
+    default:
+        alert("Invalid color entered.");
+}
+   </script> 
+</body>
+</html>
